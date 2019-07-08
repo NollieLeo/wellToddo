@@ -1,0 +1,33 @@
+<ion-header mode='ios'>
+  <ion-toolbar mode='ios'>
+    <ion-title>修改信息</ion-title>
+    <ion-buttons slot="start" mode='ios'>
+      <ion-button (click)="goBack()">
+        <ion-icon slot="icon-only" name="arrow-back" mode='ios'></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder='手机' [(ngModel)]="input_info.phone"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder='住址' [(ngModel)]="input_info.address"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder='收入' [(ngModel)]="input_info.income"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder='紧急联系人姓名' [(ngModel)]="input_info.att_people"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder='紧急联系人电话' [(ngModel)]="input_info.att_phone"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button (click)="changeInfo()">
+    确定修改
+  </button>
+</ion-content>

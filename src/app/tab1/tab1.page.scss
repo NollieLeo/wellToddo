@@ -1,0 +1,45 @@
+.welcome-card ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+.main_content{
+  h4{
+    margin: 0 ;
+    height: 2.4rem;
+    // background: #ececec;
+    font-size: 1.1rem;
+    line-height: 2.4rem;
+  }
+  ul{
+    border-top:1px solid rgba(210, 5, 5, 0.37);
+    li{
+      display: inline-block;
+      width: 33.3%;
+      text-align: center;
+      border-left: none;
+      // border-top: none;
+      border-bottom:1px solid rgba(210, 5, 5, 0.37);
+      line-height: 1;
+      padding: 1rem;
+      ion-icon{
+        font-size: 1.5rem;
+        color: rgba(210, 5, 5, 0.81);
+      }
+      span{
+        display: block;
+        margin-top: 0.5rem;
+      }
+    }
+    li:nth-of-type(4){
+      border-left: none !important;
+    }
+    li:nth-of-type(5){
+      border-right: 1px solid rgba(210, 5, 5, 0.37);
+    }
+    li+li{
+      border-left:1px solid rgba(210, 5, 5, 0.37);
+    }
+    
+  }
+}

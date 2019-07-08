@@ -1,0 +1,28 @@
+
+.my-segement{
+    .main-content{
+        ion-segment{
+            ion-segment-button.segment-button-checked{
+                color: #f70303e3;
+            }
+            ion-segment-button{
+                --indicator-color-checked:red;
+                --background-activated:red;
+                --background-hover:red;
+            }
+        }
+    }
+    
+    .segement-content{
+        .con1{
+            ion-card{
+                ion-card-header{
+                    padding: 0.9rem;
+                }
+                
+            }
+        }
+    }
+}
+
+

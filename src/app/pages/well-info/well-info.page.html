@@ -1,0 +1,78 @@
+<ion-header mode='ios'>
+  <ion-toolbar mode='ios'>
+    <ion-title *ngIf="is_filled_info">贫困信息</ion-title>
+    <ion-title *ngIf="!is_filled_info">填写贫困信息</ion-title>
+    <ion-buttons slot="start" mode='ios' *ngIf="is_filled_info">
+      <ion-button (click)="goBack()">
+        <ion-icon slot="icon-only" name="arrow-back" mode='ios'></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="userinfo">
+  <ion-img src="assets/images/header.png"></ion-img>
+  <div class="info-content">
+
+    <ion-list lines='full'>
+      <ion-item>
+        <ion-label>户主:</ion-label>
+        <ion-input [(ngModel)]="userinfo.name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>身份证:</ion-label>
+        <ion-input [(ngModel)]="userinfo.id"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>联系方式:</ion-label>
+        <ion-input [(ngModel)]="userinfo.phone"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>家庭住址:</ion-label>
+        <ion-input [(ngModel)]="userinfo.address"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>月收入:</ion-label>
+        <ion-input [(ngModel)]="userinfo.income"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>家庭人口:</ion-label>
+        <ion-input [(ngModel)]="userinfo.family_numbers"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>户口类型:</ion-label>
+        <ion-input [(ngModel)]="userinfo.registered_type"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>收入来源:</ion-label>
+        <ion-input [(ngModel)]="userinfo.income_source"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>人均收入:</ion-label>
+        <ion-input [(ngModel)]="userinfo.average_income"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>紧急联系人姓名:</ion-label>
+        <ion-input [(ngModel)]="userinfo.att_people"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>紧急联系人电话:</ion-label>
+        <ion-input [(ngModel)]="userinfo.att_phone"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>致困原因:</ion-label>
+        <ion-textarea name="poorInfo" [(ngModel)]="userinfo.detail_reasons"></ion-textarea>
+      </ion-item>
+    </ion-list>
+
+
+  </div>
+</ion-content>
+
+<ion-footer mode='ios'>
+  <ion-toolbar mode='ios'>
+    <button *ngIf="userinfo && is_filled_info" (click)="changeInfo()">修改信息</button>
+    <button *ngIf="!is_filled_info" (click)="fillInfo()">完成信息填写</button>
+  </ion-toolbar>
+  <ion-img src="assets/images/footer.png"></ion-img>
+</ion-footer>

@@ -1,0 +1,31 @@
+<ion-content>
+  <ion-img src="assets/images/tab1.png"></ion-img>
+
+  <div class="my-segement">
+
+    <div class="main-content">
+      <ion-segment [(ngModel)]="tabs" (ionChange)="segmentChanged($event)">
+        <ion-segment-button value="pnews"> 新闻 </ion-segment-button>
+        <ion-segment-button value="pcontent"> 公告</ion-segment-button>
+      </ion-segment>
+
+      <div [ngSwitch]="tabs" class="segement-content">
+        <div class="con1" *ngSwitchCase="'pnews'">
+          <ion-card *ngFor="let item of news">
+            <ion-card-header>
+              <ion-card-title>{{item.title}}</ion-card-title>
+              <ion-card-subtitle>{{item.time}}</ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content>
+              {{item.content}}
+            </ion-card-content>
+            
+          </ion-card>
+        </div>
+        <div class="con2" *ngSwitchCase="'pcontent'"> 公告 </div>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-header mode='ios'>
+  <ion-toolbar mode='ios'>
+    <ion-title>贫困人员</ion-title>
+    <ion-buttons slot="start" mode='ios'>
+      <ion-button (click)="goBack()">
+        <ion-icon slot="icon-only" name="arrow-back" mode='ios'></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of poverty_info">
+      <ion-label text-wrap>
+
+        <p>户主姓名：{{item.name}}</p>
+
+        <p>致困原因: {{item.poverty_reason}}</p>
+
+        <p>所在地区：{{item.poverty_address}}</p>
+
+      </ion-label>
+      <span>{{item.poverty_type}}</span>
+      <ion-icon slot="end" name="arrow-forward" mode='ios'></ion-icon>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

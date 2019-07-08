@@ -1,0 +1,78 @@
+<ion-header mode='ios'>
+  <ion-toolbar mode='ios'>
+    <ion-buttons slot="start" *ngIf="isShow">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="icon-only" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>账号信息</ion-title>
+    <ion-buttons slot="end" *ngIf="isShow">
+        <ion-button (click)="presentAlertConfirm()">
+          <ion-icon slot="icon-only" name="log-out" mode='ios'></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<!-- 登陆时候显示的 -->
+<ion-content *ngIf="isShow">
+  <div class="top">
+    <div class="user-img">
+      <img src="assets/images/user.jpg" alt="">
+      <span>{{userinfo.name}}</span>
+    </div>
+  </div>
+  <div class="my-choose">
+    <div class="card">
+      <img src="assets/images/ask.png" alt="">
+      <span>我的求助</span>
+      <span class="my-favor">{{userinfo.myHelpNums}}</span>
+    </div>
+    <div class="card">
+      <img src="assets/images/help.png" alt="">
+      <span>我的帮扶</span>
+      <span class="my-favor">{{userinfo.myAssistant}}</span>
+    </div>
+  </div>
+  <ion-list lines='full'>
+    <ion-item [routerLink]="['/well-info']" mode='ios'>
+      <ion-icon slot="start" name="call" mode='ios'></ion-icon>
+      <ion-label>手机</ion-label>
+      <ion-label slot="end" style="text-align:end">{{userinfo.phone}}</ion-label>
+    </ion-item>
+    <ion-item [routerLink]="['/well-info']" mode='ios'>
+      <ion-icon slot="start" name="home" mode='ios'></ion-icon>
+      <ion-label>住址</ion-label>
+      <ion-label slot="end" style="text-align:end">{{userinfo.address}}</ion-label>
+    </ion-item>
+    <ion-item [routerLink]="['/well-info']" mode='ios'>
+      <ion-icon slot="start" name="card" mode='md'></ion-icon>
+      <ion-label>收入(月/元)</ion-label>
+      <ion-label slot="end" style="text-align:end">{{userinfo.income}}</ion-label>
+    </ion-item>
+    <ion-item [routerLink]="['/userinfo']" mode='ios'>
+      <ion-icon slot="start" name="people" mode='md'></ion-icon>
+      <ion-label>紧急联系人姓名</ion-label>
+      <ion-label slot="end" style="text-align:end">{{userinfo.att_people}}</ion-label>
+    </ion-item>
+    <ion-item [routerLink]="['/well-info']" mode='ios'>
+      <ion-icon slot="start" name="call" mode='md'></ion-icon>
+      <ion-label>紧急联系人电话</ion-label>
+      <ion-label slot="end" style="text-align:end">{{userinfo.att_phone}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+
+<!-- 还未登陆时候显示的 -->
+<ion-content *ngIf="!isShow">
+  <div class="no-login" style="margin-bottom: 1rem;">
+    <ion-img src="assets/images/no-login-bg.jpg"></ion-img>
+    <h3 style="text-align: center">还未登陆噢~</h3>
+    <p style="text-align: center">现在登陆！开始扶贫！</p>
+    <p style="text-align: center">相应国家号召!</p>
+    <p style="text-align: center">共同富裕！</p>
+  </div>
+  <button [routerLink]="['/login']">登陆</button>
+</ion-content>

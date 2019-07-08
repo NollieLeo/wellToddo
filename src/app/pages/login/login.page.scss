@@ -1,0 +1,73 @@
+ion-content{
+    ion-img{
+        height: 10rem;
+    }
+   .my-login{
+    width: 90%;
+    margin:  0 auto;
+    display: block;
+    ion-list{
+        ion-item{
+            display: flex;
+            input{
+                height: 2rem;
+                border: 1px solid #ccc;
+                border-radius: 2rem;
+                outline: none;
+                padding-left: 0.6rem;
+            }
+            input:focus{
+                border: 1px solid rgba(210, 5, 5, 0.38);
+            }
+            input[type='text']{
+               width: 100%
+            }
+            input[type='password']{
+                flex: 1;
+            }
+            button[name='code']{
+                width: 5rem;
+                height: 2rem;
+                margin-left: .5rem;
+                background: #e03535;
+                border-radius: 2rem;
+                color: #fff;
+            }
+            button[name='login'],button[name='noLogin']{
+                width: 100%;
+                color: #fff;
+                height: 2.5rem;
+                outline: none;
+                font-size: 1rem;
+                background: #e03535;
+                border-radius: 2rem;
+            }
+            button:disabled{
+                background:#999;
+            }
+        }
+    }
+   }
+   .extra{
+       width: 90%;
+       margin: 0 auto;
+       display: block;
+       p{
+           color: #888;
+           text-align: center;
+       }
+       ul{
+           margin-top: .5rem;
+           display: flex;
+           li{
+               flex: 1;
+               display: inline-block;
+               text-align: center;
+               img{
+                width: 2.1rem;
+                height: auto;
+               }
+           }
+       }
+   }
+}

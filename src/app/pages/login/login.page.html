@@ -1,0 +1,41 @@
+<ion-header mode='ios'>
+  <ion-toolbar mode='ios'>
+    <ion-title>登陆</ion-title>
+    <ion-buttons slot="start" mode='ios'>
+      <ion-button (click)="goBack()">
+        <ion-icon slot="icon-only" name="arrow-back" mode='ios'></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="my-login">
+    <ion-img src="assets/images/header2.png"></ion-img>
+    <ion-list lines='none'>
+      <ion-item>
+        <input placeholder='请输入手机号' type='text' [(ngModel)]="phone" />
+      </ion-item>
+      <ion-item>
+        <input placeholder='请输入验证码' type="password" [(ngModel)]="code" />
+        <button (click)="getCode()" name="code">
+          获取验证码
+        </button>
+      </ion-item>
+      <ion-item>
+        <button name="login" *ngIf="phone" (click)='doLogin()'>登陆</button>
+        <button name="noLogin" *ngIf="!phone" disabled>登陆</button>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div class="extra">
+    <p>—————— 第三方登陆 ——————</p>
+    <ul>
+      <li *ngFor="let item of login_type_img"><img [src]="img_address+item" alt=""></li>
+    </ul>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-img src="assets/images/footer.png"></ion-img>
+</ion-footer>

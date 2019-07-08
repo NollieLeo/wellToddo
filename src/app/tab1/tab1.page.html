@@ -1,0 +1,46 @@
+<ion-content>
+  <ion-slides [options]='slideOpts' #slideBar (ionSlideTouchEnd)='doSlide()'>
+    <ion-slide *ngFor="let item of tabs_images">
+      <ion-img [src]="imgAddress + item"></ion-img>
+    </ion-slide>
+  </ion-slides>
+  <!-- <div class="height"></div> -->
+  <div class="main_content">
+    <div class="">
+      <h4>用户操作</h4>
+      <ul>
+        <li [routerLink]="['/info']">
+          <ion-icon name="mail" mode='md'></ion-icon><span>消息通知</span>
+        </li>
+        <li [routerLink]="['/well-zoom']">
+          <ion-icon name="list-box" mode='ios'></ion-icon><span>贫困人员</span>
+        </li>
+        <li [routerLink]="['/well-info']">
+          <ion-icon name="clipboard" mode='md'></ion-icon><span>个人信息</span>
+        </li>
+        <li [routerLink]="['/my-help']">
+          <ion-icon name="clipboard" mode='md'></ion-icon><span>我的求助</span>
+        </li>
+        <li [routerLink]="['/help-me']">
+          <ion-icon name="clipboard" mode='md'></ion-icon><span>我的帮扶</span>
+        </li>
+      </ul>
+    </div>
+    <div class="">
+      <h4>更多功能</h4>
+      <ul>
+        <li>
+          <ion-icon name="cube" mode='md'></ion-icon><span>扶贫课堂</span>
+        </li>
+        <li>
+          <ion-icon name="hand" mode='ios'></ion-icon><span>扶贫政策</span>
+        </li>
+        <li>
+          <ion-icon name="thumbs-up" mode='md'></ion-icon><span>意见建议</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+</ion-content>

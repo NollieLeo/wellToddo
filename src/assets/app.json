@@ -1,0 +1,366 @@
+{
+    "login_type": [
+        "contact1.png",
+        "contact2.png",
+        "contact3.png"
+    ],
+    "tabsImages": [
+        "tab1.png",
+        "tab1.png",
+        "tab1.png"
+    ],
+    "users": [
+        {
+            "name": "老魏",
+            "id": 350265654323456789,
+            "phone": 18850796813,
+            "address": "福建省福州市",
+            "registered_type": "农村",
+            "income_source": "务农",
+            "income": 18800,
+            "family_numbers": 10,
+            "average_income": "200",
+            "att_people": "张三",
+            "att_phone": 1887654321,
+            "myHelpNums": 2,
+            "myAssistant": 33,
+            "detail_reasons": "体弱多病",
+            "is_filled_info": true,
+            "get_donations":199990,
+            "give_donations":199986,
+            "need_help":false,
+            "info": [
+                {
+                    "phone": 19989876544,
+                    "message": "向您捐赠了20000人民币"
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "向您捐赠了20000人民币"
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "向您捐赠了20000人民币"
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "向您捐赠了20000人民币"
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "hello long time no see"
+                }
+            ],
+            "poverty_info": [
+                {
+                    "name": "张三",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "云南",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "李四",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "湖南",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "老李",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "福建",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "王五",
+                    "poverty_reason": "残疾",
+                    "poverty_address": "北京",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "李四",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "湖南",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "老李",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "福建",
+                    "poverty_type": "低保贫困户"
+                }
+            ]
+        },
+        {
+            "name": "老王",
+            "id": 4102653214323456789,
+            "phone": 19850796813,
+            "address": "云南省昆明市",
+            "registered_type": "农村",
+            "income_source": "务农",
+            "income": 11200,
+            "family_numbers": 10,
+            "average_income": "300",
+            "att_people": "王五",
+            "att_phone": 1987654321,
+            "my-help-nums": 2,
+            "my-assistant": 33,
+            "detail_reasons": "体弱多病",
+            "is_filled_info": true,
+            "get_donations":199990,
+            "give_donations":199986,
+            "need_help":false,
+            "info": [
+                {
+                    "phone": 19989876544,
+                    "message": "hello long time no see"
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "hello long time no see"
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "hello long time no see"
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "hello long time no see"
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "hello long time no see"
+                }
+            ],
+            "poverty_info": [
+                {
+                    "name": "张三",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "云南",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "李四",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "湖南",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "老李",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "福建",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "王五",
+                    "poverty_reason": "残疾",
+                    "poverty_address": "北京",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "李四",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "湖南",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "老李",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "福建",
+                    "poverty_type": "低保贫困户"
+                }
+            ]
+        },
+        {
+            "name": "老黑",
+            "id": "350128199808765111",
+            "phone": "18850796814",
+            "address": "",
+            "registered_type": "",
+            "income_source": "",
+            "income": "",
+            "family_numbers": "",
+            "average_income": "",
+            "att_people": "",
+            "att_phone": "",
+            "my-help-nums": "",
+            "my-assistant": "",
+            "detail_reasons": "",
+            "is_filled_info": false,
+            "get_donations":199990,
+            "give_donations":199986,
+            "need_help":false,
+            "info": [
+                {
+                    "phone": 19989876544,
+                    "message": "hello long time no see"
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "hello long time no see"
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "hello long time no see"
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "hello long time no see"
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "hello long time no see"
+                }
+            ],
+            "poverty_info": [
+                {
+                    "name": "张三",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "云南",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "李四",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "湖南",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "老李",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "福建",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "王五",
+                    "poverty_reason": "残疾",
+                    "poverty_address": "北京",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "李四",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "湖南",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "老李",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "福建",
+                    "poverty_type": "低保贫困户"
+                }
+            ]
+        },
+        {
+            "name": "老k",
+            "id": "310128199808765111",
+            "phone": "18850796815",
+            "address": "",
+            "registered_type": "",
+            "income_source": "",
+            "income": "",
+            "family_numbers": "",
+            "average_income": "",
+            "att_people": "",
+            "att_phone": "",
+            "my-help-nums": "",
+            "my-assistant": "",
+            "detail_reasons": "",
+            "is_filled_info": false,
+            "get_donations":199990,
+            "give_donations":199986,
+            "need_help":false,
+            "info": [
+                {
+                    "phone": 19989876544,
+                    "message": "hello stupid boy how are u "
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "hello long time no see"
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "stupid teammates"
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "i always finish the job own my own"
+                },
+                {
+                    "phone": 1886754321,
+                    "message": "hello long time no see"
+                }
+            ],
+            "poverty_info": [
+                {
+                    "name": "张三",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "云南",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "李四",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "湖南",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "老李",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "福建",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "王五",
+                    "poverty_reason": "残疾",
+                    "poverty_address": "北京",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "李四",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "湖南",
+                    "poverty_type": "低保贫困户"
+                },
+                {
+                    "name": "老李",
+                    "poverty_reason": "劳动力",
+                    "poverty_address": "福建",
+                    "poverty_type": "低保贫困户"
+                }
+            ]
+        }
+    ],
+    "news": [
+        {
+            "title": "何雄：脱贫是一场输不起的硬仗",
+            "time": "2018-08-14 20:10:20",
+            "content": "Keep close to Nature's heart... and break clear away, once in awhile and climb a mountain or spend a week in the woods. Wash your spirit clean."
+        },
+        {
+            "title": "何雄：脱贫是一场输不起的硬仗",
+            "time": "2018-08-14 20:10:20",
+            "content": "好好哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或"
+        },
+        {
+            "title": "何雄：脱贫是一场输不起的硬仗",
+            "time": "2018-08-14 20:10:20",
+            "content": "好好哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或"
+        },
+        {
+            "title": "何雄：脱贫是一场输不起的硬仗",
+            "time": "2018-08-14 20:10:20",
+            "content": "好好哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或"
+        },
+        {
+            "title": "何雄：脱贫是一场输不起的硬仗",
+            "time": "2018-08-14 20:10:20",
+            "content": "好好哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或"
+        },
+        {
+            "title": "何雄：脱贫是一场输不起的硬仗",
+            "time": "2018-08-14 20:10:20",
+            "content": "好好哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或"
+        }
+    ]
+}
